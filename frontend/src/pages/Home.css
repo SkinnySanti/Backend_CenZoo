@@ -1,0 +1,55 @@
+/* --- Estilo principal para la página de Inicio --- */
+.intro-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-container h2 {
+  font-size: 2em;
+  color: #3880ff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.intro-container p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Imagen de bienvenida */
+.welcome-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los botones */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.buttons-container ion-button {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+/* Sección sobre CENZOO */
+ion-text h3 {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+ion-text p {
+  color: #555;
+  font-size: 1em;
+  margin-top: 10px;
+}

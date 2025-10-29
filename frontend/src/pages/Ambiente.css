@@ -1,0 +1,142 @@
+ion-content {
+  --ion-background-color: #f2f7f3;
+}
+
+/* --- Búsqueda --- */
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.search-container ion-searchbar {
+  flex-grow: 1;
+  --background: #fff;
+  --border-radius: 10px;
+}
+
+.filter-icon {
+  margin-left: 10px;
+  color: #4a4a4a;
+}
+
+/* --- Segmentos --- */
+ion-segment {
+  padding: 0 16px;
+  margin-bottom: 10px;
+}
+
+/* --- Indicadores --- */
+.indicators {
+  padding: 0 10px;
+}
+
+.indicator-card {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: none;
+  transition: all 0.4s ease;
+}
+
+.indicator-value {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.indicator-label {
+  color: #666;
+  font-size: 0.85em;
+}
+
+/* --- Títulos --- */
+.section-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* --- Emisiones --- */
+.emission-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.emission-level {
+  height: 16px;
+  background: linear-gradient(90deg, #1d7e2e, #49b24a);
+  border-radius: 8px;
+  transition: width 0.8s ease-in-out;
+}
+
+/* --- Problemas --- */
+.problem-card {
+  margin: 10px 16px;
+  border-radius: 12px;
+  box-shadow: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.problem-title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.problem-subtitle {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* --- Mapa --- */
+.map-container {
+  margin: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* --- Animaciones globales --- */
+.fade-section.fade {
+  opacity: 0.3;
+  transform: scale(0.98);
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-card {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-bar {
+  animation: growBar 1s ease-in-out;
+}
+
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--final-width, 50%);
+  }
+}

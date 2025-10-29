@@ -1,0 +1,137 @@
+ion-header {
+  ion-toolbar {
+    --background: white; 
+    
+    ion-title {
+      color: #3880ff; /* Ajusta este color si tienes un color principal diferente */
+      font-weight: bold;
+    }
+
+    ion-icon {
+      color: #000;
+    }
+  }
+}
+
+ion-content {
+  --ion-background-color: #f7f9fc; 
+}
+
+/* --- Barra de Búsqueda y Filtro --- */
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 10px; 
+  
+  ion-searchbar {
+    flex-grow: 1;
+    --background: white;
+    --border-radius: 12px;
+    padding: 0;
+  }
+  
+  .filter-icon {
+    font-size: 28px;
+    margin-left: 10px;
+    color: #4a4a4a;
+  }
+}
+
+/* --- Segmentos/Filtros (ion-segment) --- */
+ion-segment {
+  padding-left: 16px;
+  padding-bottom: 10px;
+  --background: #f7f9fc; 
+}
+
+ion-segment-button {
+  --background-checked: #d3f9d8; 
+  --color: #4a4a4a; 
+  --color-checked: #1d7e2e; 
+  --indicator-color: transparent; 
+  --border-radius: 20px;
+  margin-right: 8px; 
+  min-height: 35px; 
+}
+
+/* --- Títulos de Sección --- */
+.section-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* --- Tarjetas (ion-card) --- */
+ion-grid {
+    padding: 0 10px;
+}
+
+.species-card {
+  margin: 0 5px 10px; 
+  box-shadow: none; 
+  border-radius: 10px;
+  height: 180px; 
+  overflow: hidden;
+  position: relative; 
+}
+
+/* Imagen de la tarjeta */
+.species-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Superposición oscura y contenido */
+.card-content-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); 
+}
+
+.species-name {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+/* Chip de Categoría */
+.category-chip {
+  --background: #fff; 
+  height: 25px;
+  font-size: 0.75em;
+  font-weight: 500;
+  padding: 0 8px;
+  border-radius: 12px;
+}
+
+/* Colores de texto del chip según la categoría */
+.mamifero-chip ion-label {
+    color: #4CAF50; /* Verde */
+}
+
+.ave-chip ion-label {
+    color: #f44336; /* Rojo */
+}
+
+.reptil-chip ion-label {
+    color: #2196F3; /* Azul */
+}
+
+/* Estilos específicos para la sección "Más especies" (fondo gris claro) */
+.more-species-card {
+  height: 150px; 
+  background-color: #e9eef2; 
+}
+
+.more-species-card img {
+    opacity: 0.8; 
+}
