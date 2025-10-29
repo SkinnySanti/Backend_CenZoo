@@ -1,7 +1,0 @@
-{
-  "name": "Cenzoo",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}

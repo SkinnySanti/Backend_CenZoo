@@ -4,13 +4,11 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 
 @Table(name = "animales")
 public class Animal {
@@ -18,7 +16,7 @@ public class Animal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idAnimal;
     private String nombreAnimal;
-    private Integer edadAnimal;
+    private String edadAnimal;
     private String generoAnimal;
 
     @ManyToOne

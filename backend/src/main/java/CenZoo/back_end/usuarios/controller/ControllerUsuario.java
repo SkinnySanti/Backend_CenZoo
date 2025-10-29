@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/usuario")
 public class ControllerUsuario {
     @Autowired
     private IServiceUsuario serviceUsuario;
@@ -30,7 +30,7 @@ public class ControllerUsuario {
         return ResponseEntity.ok(usuarios);
     }
 
-    @GetMapping("/usuario/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable Integer id) {
         Optional<Usuario> usuarioEncontrado = serviceUsuario.buscarUsuarioPorId(id);
         //Condición, si existe obtiene el valor del Optional- Sino, retorna Not Found
